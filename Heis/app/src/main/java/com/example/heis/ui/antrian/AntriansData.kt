@@ -59,7 +59,7 @@ object AntriansData {
                 antrian.noHp = noHpPasien[position]
                 antrian.ktp = ktpPasien[position]
                 antrian.usia = usiaPasien[position]
-                antrian.antrian = noAntrianPasien[position]
+                antrian.noAntrian = noAntrianPasien[position]
                 listAntrian.add(antrian)
             }
             return listAntrian
