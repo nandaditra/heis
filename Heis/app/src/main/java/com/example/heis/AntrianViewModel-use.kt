@@ -5,9 +5,9 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.database.*
 
-class AntrianViewModel : ViewModel() {
+class `AntrianViewModel-use` : ViewModel() {
 
-    val antrian = MutableLiveData<ArrayList<Pasien>>()
+    val antrian = MutableLiveData<ArrayList<`Pasien-use`>>()
     val ref = FirebaseDatabase.getInstance("https://heis-82a96-default-rtdb.asia-southeast1.firebasedatabase.app").getReference("Antrian")
     var counter = 0
 
@@ -16,7 +16,7 @@ class AntrianViewModel : ViewModel() {
         loadData()
     }
 
-    fun add(pasien: Pasien) {
+    fun add(pasien: `Pasien-use`) {
         pasien.nomorAntrian = counter + 1
         ref.push().setValue(pasien)
     }
@@ -26,7 +26,7 @@ class AntrianViewModel : ViewModel() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 antrian.value?.clear()
                 for (item in snapshot.children) {
-                    val pasien = item.getValue(Pasien::class.java)
+                    val pasien = item.getValue(`Pasien-use`::class.java)
                     if (pasien != null) {
                         antrian.value?.add(pasien)
                         Log.v("loadData", pasien.toString())

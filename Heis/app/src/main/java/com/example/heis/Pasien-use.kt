@@ -1,6 +1,6 @@
 package com.example.heis
 
-class Pasien(
+class `Pasien-use`(
     val nama: String = "",
     val noHp: String = "",
     val nik: String= "",

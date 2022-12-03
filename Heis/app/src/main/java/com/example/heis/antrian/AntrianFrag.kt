@@ -29,16 +29,6 @@ class AntrianFrag : Fragment() {
         return view
     }
 
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_antrian)
-//
-//        rvAntrian = findViewById(R.id.rv_antrian)
-//        rvAntrian.setHasFixedSize(true)
-//
-//        list.addAll(AntriansData.listData)
-//        showRecyclerList()
-//    }
 
     private fun showRecyclerList() {
         rvAntrian.layoutManager = LinearLayoutManager(activity)
