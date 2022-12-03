@@ -36,6 +36,17 @@ object AntriansData {
         "332502843483593"
     )
 
+    private var noAntrianPasien = arrayOf("111G47",
+        "111G48",
+        "111G49",
+        "111G50",
+        "111G51",
+        "111G52",
+        "111G53",
+        "111G54",
+        "111G55",
+    )
+
     private var usiaPasien = arrayOf(20,20,20,20,20,20,20,20,20,20)
 
     val listData: ArrayList<Antrian>
@@ -48,6 +59,7 @@ object AntriansData {
                 antrian.noHp = noHpPasien[position]
                 antrian.ktp = ktpPasien[position]
                 antrian.usia = usiaPasien[position]
+                antrian.antrian = noAntrianPasien[position]
                 listAntrian.add(antrian)
             }
             return listAntrian
