@@ -1,4 +1,4 @@
-package com.example.heis.ui.antrian
+package com.example.heis.antrian
 
 object AntriansData {
     private var namaPasien = arrayOf("Naufal Fathurahman Mahing",
@@ -45,6 +45,7 @@ object AntriansData {
         "111G53",
         "111G54",
         "111G55",
+        "111G56",
     )
 
     private var usiaPasien = arrayOf(20,20,20,20,20,20,20,20,20,20)

@@ -1,4 +1,4 @@
-package com.example.heis.ui.antrian
+package com.example.heis.antrian
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,8 +9,8 @@ import com.example.heis.R
 
 class ListAntrianAdapter(private val listAntrian: ArrayList<Antrian>) : RecyclerView.Adapter<ListAntrianAdapter.ListViewHolder>() {
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-         var tvName :  TextView = itemView.findViewById(R.id.tv_item_nama)
-         var tvNoAntrian : TextView = itemView.findViewById(R.id.tv_item_noantrian)
+         var tvName :  TextView = itemView.findViewById(R.id.tv_item_antrian)
+         var tvNoAntrian : TextView = itemView.findViewById(R.id.tv_item_detail)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {

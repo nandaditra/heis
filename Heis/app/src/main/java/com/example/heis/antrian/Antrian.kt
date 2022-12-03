@@ -1,4 +1,4 @@
-package com.example.heis.ui.antrian
+package com.example.heis.antrian
 
 data class Antrian (
     var nama : String = "",
