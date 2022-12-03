@@ -4,6 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".ui.antrian.AntrianActivity">
+
+    <TextView
+        android:id="@+id/tv_judul_antrian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar Antrian"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:layout_marginBottom="5dp"
+        android:layout_marginHorizontal="8dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/rv_antrian" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_antrian"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="1sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_row_antrian"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
