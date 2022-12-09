@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "2327743408",
+    "project_id": "heis-82a96",
+    "storage_bucket": "heis-82a96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2327743408:android:b68855ee279878c19be475",
+        "android_client_info": {
+          "package_name": "com.example.heis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2327743408-l6kfdsuhndep7f68t8npbsmmjem5tr4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv_kZemv0QbDVgk-W0ll-GMSvzDV2h5r0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2327743408-l6kfdsuhndep7f68t8npbsmmjem5tr4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
